@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Ajax Scroll</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/infinite-ajax-scroll/3.0.0/infinite-ajax-scroll.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="post">...</div>
+        <div class="post">...</div>
+    </div>
+
+    <div id="pagination">
+        <a href="/page1/" class="prev">prev</a>
+        <a href="/page3/" class="next">next</a>
+    </div>
+</body>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var ias = $.ias({
+            container: '#content',
+            item: '.post',
+            pagination: '#pagination',
+            next: '#pagination a.next'
+        });
+
+        ias.extension(new IASSpinnerExtension());
+        ias.extension(new IASTriggerExtension({
+            offset: 2, // 设置滚动到倒数第2个元素时加载下一页
+        }));
+        ias.extension(new IASNoneLeftExtension({
+            text: '没有更多内容了', // 当没有更多内容时显示的文本
+        }));
+    });
+</script>
+
+</html>
