@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溢出隐藏</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid pink;
+            margin: 0 auto;
+            /* 默认选项 溢出部分不隐藏 */
+            /* overflow: visible; */
+            /* 溢出部分隐藏 */
+            /* overflow: hidden; */
+            /* 对于溢出部分总是添加滚动条 */
+            /* overflow: scroll; */
+            /* 只有溢出时才添加滚动条 */
+            /* 有定位的盒子 慎用overflow:hidden 因为它会隐藏多余部分 */
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        《小猪佩奇》（Peppa Pig）是英国动画公司Astley Baker Davies、Entertainment One制作的原创欧洲儿童系列电视动画 [11]
+        [13]，由内维尔·阿斯特利、马克·贝克、菲尔·霍尔与乔里斯·范胡尔岑执导
+        [14]，于2004年5月31日在英国电视五台首播 [15]，2015年6月，《小猪佩奇》引进中国大陆，并在中央电视台少儿频道首播 [17]
+    </div>
+</body>
+
+</html>

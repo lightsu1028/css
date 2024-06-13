@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位托标</title>
+    <style>
+        .box {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .b1 {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 由于b1元素增加了绝对定位会托标 b2会上浮占领b1的位置 */
+        .b2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="b1"></div>
+        <div class="b2"></div>
+    </div>
+</body>
+
+</html>

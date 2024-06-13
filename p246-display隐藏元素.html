@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display隐藏元素</title>
+    <style>
+        .pepa {
+            /* 
+                display: none 会隐藏元素 且空出原来的位置 george元素会上浮占用
+                display: block不仅可用于转换块元素  还可对隐藏的元素进行展示
+            */
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .george {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pepa">小猪佩奇</div>
+    <div class="george">乔治</div>
+</body>
+
+</html>

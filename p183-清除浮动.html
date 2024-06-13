@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清楚浮动</title>
+    <style>
+        /* 第三种方法after伪元素 */
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .box {
+            /* 父元素未设置高 让子元素撑开 */
+            width: 800px;
+            border: 1px solid blue;
+            margin: 0 auto;
+            /* 第二种方法：添加overflow */
+            /* overflow: hidden; */
+        }
+
+        .damao {
+            float: left;
+            width: 300px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 由于 damao ermao两个元素浮动的原因 footer会上移被覆盖*/
+        .footer {
+            width: 300px;
+            height: 200px;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+        <div class="damao">大猫</div>
+        <div class="ermao">二毛</div>
+        <!-- 1.第一种方法添加空标签块级元素 样式 clear:both -->
+        <!-- <div style="clear: both;"></div> -->
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+
+</html>

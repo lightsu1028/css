@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility隐藏元素</title>
+    <style>
+        .pepa {
+            /* 
+                visibility: hidden 会隐藏元素 原来的位置不会空出来 george元素不会上浮占用
+                visibility: visible对隐藏的元素进行展示
+            */
+            visibility: visible;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .george {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pepa">小猪佩奇</div>
+    <div class="george">乔治</div>
+</body>
+
+</html>

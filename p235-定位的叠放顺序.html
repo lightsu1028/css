@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的叠放顺序</title>
+    <style>
+        .box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+
+        /*
+            含有定位属性的盒子使用z-index属性定义叠放顺序
+            数值可以是正整数、0、负整数，默认是auto,数值越大，越往上 
+         */
+        .b1 {
+            background-color: blue;
+            z-index: 10;
+        }
+
+        .b2 {
+            top: 50px;
+            left: 50px;
+            background-color: pink;
+            z-index: 8;
+        }
+
+        .b3 {
+            top: 100px;
+            left: 100px;
+            background-color: purple;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box b1">光头强</div>
+    <div class="box b2">熊大</div>
+    <div class="box b3">熊二</div>
+</body>
+
+</html>
