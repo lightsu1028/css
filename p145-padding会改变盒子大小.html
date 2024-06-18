@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding会改变盒子大小</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 由于给盒子增加了10px的内边距
+               盒子大小变为220*220的大小
+               
+               解决：宽度、高度提前减去扩大部分的内边距大小
+               width: 180px；
+               height: 180px;
+            */
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        一旦为页面设置了恰当的 DTD，大多数浏览器都会按照上面的图示来呈现内容。然而 IE 5 和 6 的呈现却是不正确的。根据 W3C 的规范，元素内容占据的空间是由 width 属性设置的，而内容周围的 padding 和
+        border
+    </div>
+</body>
+
+</html>
