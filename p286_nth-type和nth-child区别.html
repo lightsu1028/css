@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-type和nth-child区别</title>
+    <style>
+        /* 
+            先对section下面的所有元素个数进行排序，再按伪类选择器选择第一个元素，然后跟div匹配类型，
+            如果类型不匹配，则直接忽略，所以此处没有元素会改变背景颜色，p标签不满足div这个类型
+        */
+        /* section div:nth-child(1) {
+            background-color: pink;
+        } */
+
+
+        /* 
+            先对section下面的所有div元素进行排序，再按伪类选择器选择div元素中的第一个
+        */
+        section div:nth-of-type(1) {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+
+</html>

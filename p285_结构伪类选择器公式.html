@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用公式</title>
+    <style>
+        /* 偶数表达式 */
+        /* ul li:nth-child(2n) {
+            background-color: pink;
+        } */
+
+        /* 奇数表达式 */
+        /* ul li:nth-child(2n+1) {
+            background-color: yellow;
+        } */
+        /* 
+            n 从0开始 每次加1
+            5n=> 0 5 10 15 ...
+            选择第五个 第十个 第十五个。。。
+        */
+        /* ul li:nth-child(5n) {
+            background-color: skyblue;
+        }
+         */
+        /* 
+            n+5: 5 6 7...
+            表示从第五个开始，选择所有元素。。。
+        */
+        /* ul li:nth-child(n+5) {
+            background-color: red;
+        } */
+        /* 
+            -n+5: 5 4 3 2 1 0
+            表示选择前五个元素
+        */
+        ul li:nth-child(-n+5) {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+        <li>我是第9个孩子</li>
+        <li>我是第10个孩子</li>
+        <li>我是第11个孩子</li>
+        <li>我是第12个孩子</li>
+        <li>我是第13个孩子</li>
+        <li>我是第14个孩子</li>
+        <li>我是第15个孩子</li>
+    </ul>
+</body>
+
+</html>
