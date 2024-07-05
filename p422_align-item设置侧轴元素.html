@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局设置主轴方向排序</title>
+    <style>
+        div {
+            /*  */
+            display: flex;
+            width: 800px;
+            height: 300px;
+            background-color: pink;
+            /* 设置主轴元素排放  默认式x轴 行排放*/
+            /* flex-direction: row; */
+            flex-direction: row;
+            /* 设置主轴元素居中排列 */
+            justify-content: center;
+            /* 设置侧轴元素居中排列 单行 */
+            align-items: center;
+        }
+
+        div span {
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>

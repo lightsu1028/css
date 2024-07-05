@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框的使用</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 100px; */
+            border-radius: 50%;
+        }
+
+        .square {
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+            /* 设置为高的一半 */
+            border-radius: 50px;
+        }
+
+        .radius {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            /* 左上角 右上角 右下角 左下角 */
+            /* border-radius: 10px 20px 30px 40px; */
+            /* 左上角 右下角为20px圆角 右上角 左下角为30px圆角  */
+            border-radius: 20px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">圆形</div>
+    <div class="square">圆角矩形</div>
+    <div class="radius">四个圆角不一样</div>
+</body>
+
+</html>

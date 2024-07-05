@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 传统的盒模型计算方法  从内容区域+padding+margin+border计算盒子大小 */
+            box-sizing: content-box;
+            padding: 10px;
+            border: 10px solid red;
+        }
+
+        div:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* css3盒子模型  从盒子边框开始计算盒子大小 padding和border不会撑大盒子了*/
+            box-sizing: border-box;
+            padding: 10px;
+            border: 10px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

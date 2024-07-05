@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相邻块元素垂直外边距合并</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- box1和box2的上下外边距并不是20+10 而是取了最大值20px-->
+    <!-- 这种取两个值中的较大者现象被称为相邻块元素垂直外边距的合并 -->
+    <!-- 解决方案：尽量只给一个盒子加外边距 -->
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+
+</body>
+
+</html>

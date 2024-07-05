@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距合并-嵌套元素</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+            margin-top: 30px;
+            /* border: 1px solid transparent; */
+            /* padding: 1px; */
+            overflow: hidden;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        父元素和子元素都具有上边距，此时父元素会塌陷较大的外边距，即最大值80px
+
+        解决方案：
+                1.可以为父元素定义上边框
+                2.可以为父元素定义上内边距
+                3.父元素添加overflow：hidden
+    -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
