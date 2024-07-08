@@ -12,6 +12,10 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     /* margin: 28px 0px; */
     height: 46px;
@@ -183,6 +187,148 @@ li {
 
 .goods {
     height: 60px;
-    background-color: pink;
+    background-color: #fff;
     margin-top: 5px;
+    /* 行高可继承给子元素 */
+    line-height: 60px;
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+}
+
+.tuijian {
+    float: left;
+    color: #6cbbff;
+    margin-left: 32px;
+    font-size: 16px;
+}
+
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a {
+    /* 左右撑开 */
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 2px solid #bebebe;
+}
+
+.mod {
+    float: right;
+    margin-right: 25px;
+    font-size: 16px;
+    color: #6cbbff;
+}
+
+.box {
+    margin-top: 30px;
+}
+
+.box .box-hd {
+    height: 40px;
+}
+
+.box .box-hd h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.box .box-hd a {
+    float: right;
+    margin-right: 28px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.box-bd ul {
+    width: 1215px;
+}
+
+.box-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+
+.box-bd ul li:hover {
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+}
+
+.box-bd .title {
+    margin: 23px 20px 17px 20px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.box-bd .info {
+    margin: 15px 82px 25px 22px;
+    font-size: 12px;
+    color: #999;
+}
+
+.box-bd .info span {
+    color: #ff7c2d;
+}
+
+.footer {
+    height: 415px;
+    background-color: pink;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.footer .w {
+    margin-top: 35px;
+}
+
+.footer .copyright {
+    float: left;
+}
+
+.footer .copyright p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+.footer .copyright .app {
+    display: block;
+    width: 118px;
+    height: 35px;
+    font-size: 16px;
+    color: #02a4ff;
+    border: 1px solid #02a4ff;
+    /* padding: 10px 25px; */
+    line-height: 35px;
+    text-align: center;
+}
+
+.footer .links {
+    float: right;
 }
